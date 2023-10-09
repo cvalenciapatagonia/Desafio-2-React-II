@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import NavBar from '../components/Navbar';
+import NavBar from './NavBar';
 import Home from '../views/Home'
 import Favorites from '../views/Favorites'
+import NotFound from '../views/NotFound'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { MyContext } from '../contexts/MyContext'
@@ -32,6 +33,7 @@ const Data = () => {
           <Routes>
             <Route path='*' element={<Home />} />
             <Route path='/favorites' element={<Favorites />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </BrowserRouter>
     </MyContext.Provider>

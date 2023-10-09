@@ -1,0 +1,42 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EDEDED;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+}
+
+/* Foto individual */
+.foto {
+  height: 300px;
+  width: 230px;
+  border-radius: 3%;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Mouse effect */
+.foto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Photo effect */
+.foto:hover {
+  transform: scale(1.5); 
+}
+

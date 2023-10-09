@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import NavBar from '../components/Navbar';
+import NavBar from './NavBar';
 import Home from '../views/Home'
 import Favorites from '../views/Favorites'
 
@@ -30,7 +30,7 @@ const Data = () => {
       <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path='*' element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='/favorites' element={<Favorites />} />
           </Routes>
         </BrowserRouter>
