@@ -11,7 +11,7 @@ const Data = () => {
   const [fotos, setFotos] = useState([]);
 
   const getData = async() => {
-    const res = await fetch('https://raw.githubusercontent.com/cvalenciapatagonia/Desafio-2-React-II/main/src/data/data.json');
+    const res = await fetch('data.json');
     const data = await res.json();
 
     const { photos } = data
