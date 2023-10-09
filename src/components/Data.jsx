@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import NavBar from './NavBar';
+import NavBar from '../NavBar';
 import Home from '../views/Home'
 import Favorites from '../views/Favorites'
 import NotFound from '../views/NotFound'
